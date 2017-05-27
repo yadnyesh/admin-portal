@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { LoginComponent } from './components/login/login.component';
 
+import { LoginService } from './services/login.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,9 @@ import { LoginComponent } from './components/login/login.component';
     MaterialModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    LoginService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
