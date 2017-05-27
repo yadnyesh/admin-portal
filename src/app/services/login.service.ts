@@ -8,7 +8,7 @@ export class LoginService {
   constructor(private http: Http) { }
 
   sendCredential(username: string, password: string) {
-    
+    let url = "http://localhost:8181/token";
   }
 
 }
