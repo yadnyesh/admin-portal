@@ -11,7 +11,11 @@ export class LoginComponent implements OnInit {
   private credential = {'username': '', 'password': ''};
   private loggedIn = false;
 
-  constructor() { }
+  constructor(private loginService: LoginService) { }
+
+  onSubmit(){
+    
+  }
 
   ngOnInit() {
   }
