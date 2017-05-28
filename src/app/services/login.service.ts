@@ -21,9 +21,7 @@ export class LoginService {
   }
 
   checkSession() {
-    let url = "http://localhost:8181/token";
-    let encodedCredentials = btoa(username + ":" + password);
-    let basicHeader = "Basic " + encodedCredentials;
+    let url = "http://localhost:8181/checkSession";
     let headers = new Headers ({
       'Content-Type': 'application/x-www-form-urlencoded',
       'Authorization' : basicHeader
