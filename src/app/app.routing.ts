@@ -1,1 +1,1 @@
-import {ModuleWithProviders} from '@angular/core';
+import {ModuleWithProviders}          from '@angular/core';
