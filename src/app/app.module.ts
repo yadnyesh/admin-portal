@@ -23,6 +23,7 @@ import { LoginService }           from './services/login.service';
     BrowserModule,
     FormsModule,
     HttpModule,
+    routing,
     MaterialModule,
     BrowserAnimationsModule
   ],
