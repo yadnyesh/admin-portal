@@ -27,4 +27,15 @@ export class NavBarComponent implements OnInit {
     );
   }
 
+  ngOnInit() {
+    this.loginService.checkSession().subscribe(
+      res => {
+        this.loggedIn=true;
+      },
+      error => {
+        this.loggedIn=false;
+      }
+    );
+  }
+
 }
