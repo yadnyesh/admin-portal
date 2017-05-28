@@ -10,7 +10,7 @@ export class NavBarComponent implements OnInit {
 
   private loggedIn = false;
 
-  constructor() { }
+  constructor(private loginService:LoginService) { }
 
   toggleDisplay() {
     this.loggedIn = !this.loggedIn;
