@@ -5,7 +5,7 @@
       <md-grid-tile [colspan]="4">
         <form (ngSubmit)="onSubmit()">
               <md-input-container class="full-width">
-                <input type="text" mdInput[(ngModel)]="credential.username"></input>
+                <input type="text" mdInput[(ngModel)]="credential.username" name="username" id="username"></input>
               </md-input-container>
         </form>
       </md-grid-tile>
