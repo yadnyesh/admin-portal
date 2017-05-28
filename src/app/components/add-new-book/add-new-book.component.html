@@ -115,7 +115,9 @@
           <a class="mat-warn" md-raised-button routerLink="/">Cancel</a>
         </md-grid-tile>
       </md-grid-list>
-
       </form>
+  </div>
+  <div class="row" [hidden]="!bookAdded">
+    <h3>Book added successfully!</h3>
   </div>
 </div>
