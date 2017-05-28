@@ -33,7 +33,7 @@ export class NavBarComponent implements OnInit {
         location.reload();
       },
       error => {
-        this.loggedIn=false;
+        console.log(error);
       }
     );
   }
