@@ -27,10 +27,10 @@ export class NavBarComponent implements OnInit {
     );
   }
 
-  ngOnInit() {
-    this.loginService.checkSession().subscribe(
+  logout() {
+    this.loginService.logout().subscribe(
       res => {
-        this.loggedIn=true;
+        location.reload();
       },
       error => {
         this.loggedIn=false;
