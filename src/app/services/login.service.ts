@@ -35,7 +35,7 @@ export class LoginService {
       'x-auth-token' : localStorage.getItem('xAuthToken')
     });
 
-    return this.http.post(url,{headers: headers});
+    return this.http.post(url,'', {headers: headers});
   }
 
 }
