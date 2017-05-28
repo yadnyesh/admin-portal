@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddNewBookComponent implements OnInit {
 
+  private newBook: Book = new Book();
+  private bookAdded: boolean;
+
   constructor() { }
 
   ngOnInit() {
