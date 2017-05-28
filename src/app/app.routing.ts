@@ -3,7 +3,11 @@ import {Routes, RouterModule}          from '@angular/router';
 import {LoginComponent}               from './components/login/login.component';
 
 const appRoutes: Routes = [
-
+  {
+    path : '',
+    redirectTo: '/login',
+    pathMatch: 'full'
+  }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes)
