@@ -28,6 +28,14 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.loginService.checkSession().subscribe(
+      res => {
+
+      },
+      error => {
+        
+      }
+    );
   }
 
 }
